@@ -1,0 +1,143 @@
+  /*############# Global #############*/
+  body{
+      background-color: rgb(221, 239, 245);
+      font-family: 'Karla', sans-serif; 
+      margin: 0;     
+  }
+
+
+  /*############# main-container #############*/
+  .main-container{
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px; 
+    max-width: 1440px;
+    width: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;  
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fc fc"
+                         "sc tc"                           
+
+  }
+
+  /*############# firstcard #############*/
+  .firstcard{
+    grid-area: fc;
+    padding: 30px;
+  }
+
+  .firstcard h1{
+    color: hsl(179, 62%, 43%);
+    
+  }
+
+  .firstcard h2{
+      color: hsl(71, 73%, 54%);
+  }
+
+  .firstcard p{
+      font-size: 16px;
+      color: hsl(218, 22%, 67%);
+  }
+
+/*############# secondcard #############*/
+.secondcard{
+    grid-area: sc;
+    padding: 45px;
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+    text-align: left;
+        
+}
+
+.secondcard h1 {
+    display: inline-block;
+    margin-bottom: -8px;
+
+}
+
+.secondcard h2 {
+    margin: 0;
+}
+
+.secondcard #p-in-h1{
+    color: #fff;
+    opacity: 0.5;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.secondcard p{
+    margin-top: 0;
+}
+
+.secondcard button{
+    background-color:  hsl(71, 73%, 54%);
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 18px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+
+.secondcard button:hover{
+  background-color: #00cf3b;
+  text-decoration: none;
+}
+
+/*############# thirdcard #############*/
+.thirdcard{
+    grid-area: tc;
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.85;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+    
+   
+}
+
+.thirdcard h2{
+    font-weight: bold;
+}
+
+.thirdcard > p{
+    margin: 5px;
+}
+
+/*############# footer #############*/
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/*############# mobile screen #############*/
+   @media only screen and (max-width: 375px){
+    
+    .main-container{
+      grid-template-columns: 1fr;
+      grid-template-areas: "fc"
+                           "sc"
+                           "tc"; 
+      max-width: 360px;
+         
+   
+    }
+  
+    footer{
+      margin-top: 30px;
+    }
+  } 
