@@ -1,0 +1,132 @@
+/*############## Global ################*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #000000;
+   color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h h h"
+                         "m m m"
+                         "f f f";
+}
+
+/*############## Header ################*/
+header{
+    grid-area: h;
+    background-color: #0f083b;
+    color: #eedf56;
+    text-align: center;
+    padding: 40px;
+    border-radius: 25px;
+    width: 70%;
+    margin: 10px auto;
+    
+}
+
+header h1{
+    display: inline;
+}
+
+header #profession{
+    color: #0099CC;
+    
+}
+
+header #frontend{
+    color: white;
+}
+
+header #h2symbol-1{
+    color: #f1da08;
+}
+
+header #h2symbol-2{
+    color: #f1da08;
+}
+
+
+header .fa_custom{   
+    background-color: #0099CC;
+}
+
+header a{
+    color: white;
+}
+
+header i{
+    margin: 20px;
+}
+
+/*############## Main ################*/
+main{
+    grid-area: m;
+}
+
+.div-main{
+    background-color: rgb(6, 4, 151);
+    opacity: 0.69;
+    width: 400px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: -40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main div h1{
+    text-align: center;
+    color: #ffe600;
+    font-size: 40px;
+}
+
+/*############## Main div-images ################*/
+main .div-images{
+    background-color: yellowgreen;
+    color: #eedf56;
+    text-align: center;
+    padding: 40px;
+    border-radius: 25px;
+    width: 70%;
+    margin: -20px auto;
+}
+
+main img{
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 15px;
+}
+
+.div-images a{
+    color: white;
+}
+
+.div-images h3{
+    text-align: left;
+    color: coral;
+    font-size: 30px;
+}
+
+.div-images p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+
+}
+
+/*############## Footer ################*/
+
+footer{
+    grid-area: f;
+    padding: 80px;
+    text-align: center;
+    font-size: 24px;
+}
