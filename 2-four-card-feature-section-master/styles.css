@@ -1,0 +1,119 @@
+/*################### global #####################*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: hsl(0, 0%, 98%);
+    margin: 0 auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h h h"
+                         "m m m"
+                         "f f f";
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*################### header #####################*/
+
+header{
+    grid-area: h;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: -30px;
+   
+}
+
+header #h1slogan{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+header #h1subslogan{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    
+}
+
+header p{
+    color: hsl(229, 6%, 66%);
+    
+}
+
+/*################### main #####################*/
+
+main{
+    grid-area: m;
+    padding: 50px;
+}
+
+main h3 {
+    color: hsl(234, 12%, 34%);
+    font-weight: bold;
+}
+
+main p{
+    color: hsl(229, 6%, 66%);
+    padding: 10px;
+}
+
+    /*### div-cards-inners ###*/
+main div{
+    float: left;
+    width: 370px;
+    height: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0px hsl(229, 6%, 66%);;
+}
+
+
+#card-supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+    margin-right: 20px;
+    margin-top: 150px;
+        
+}
+
+#card-teambuilder{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    margin-right: 20px;   
+    
+}
+
+#card-calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    margin-top: 150px;
+}
+
+#card-karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+    margin: 20px 33.33%;
+    margin-top: -130px;
+  
+}
+
+main .card-inners img{
+    margin-top: 15%;
+    margin-left: 77%;
+}
+/*################### footer #####################*/
+footer{
+    grid-area: f;
+    padding: 40px;
+}
+
+.attribution { 
+     font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
