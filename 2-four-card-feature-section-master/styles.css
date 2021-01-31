@@ -21,15 +21,14 @@ body{
 /*################### header #####################*/
 header{
     text-align: center;
-    padding: 50px;
+    padding: 25px;
     margin-bottom: -30px;
-    border: 1px solid black;
-    margin-top: 10px;
 }
 
 header #h1slogan{
     font-weight: 200;
-    color: hsl(229, 6%, 66%);
+    color: hsl(234, 12%, 34%);
+    opacity: 0.65;
 }
 
 header #h1subslogan{
@@ -38,13 +37,11 @@ header #h1subslogan{
 }
 
 header p{
-    color: hsl(229, 6%, 66%);
+    padding: 15px;
+    color: hsl(234, 12%, 34%);
+    opacity: 0.5;
 }
 /*################### main #####################*/
-main{
-    margin-top: 50px;
-    border: 1px solid red;
-}
 
 main h3 {
     color: hsl(234, 12%, 34%);
@@ -52,13 +49,13 @@ main h3 {
 }
 
 main p{
+    
     color: hsl(229, 6%, 66%);
     padding: 10px;
 }
 
 /*### div-cards-container ###*/
 .div-cards-container{
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -70,14 +67,13 @@ main p{
                          ". kc .";
     width: 80%;
     margin: 0 auto;
-    border: 1px solid blue;
     justify-items: center;
     gap: 0 20px;
-    
 }
   
 .cards{
-    min-width: 350px;
+    min-width: 200px;
+    max-width: 370px;
     min-height: 250px;
     background-color: white;
     padding: 20px;
@@ -91,7 +87,6 @@ main p{
     border-top: 4px solid hsl(180, 62%, 55%);
     grid-area: sc;
     justify-self: end;
-    
 }
 
 #card-teambuilder{
@@ -112,12 +107,13 @@ main p{
 }
 
 img{
-
+    padding-top: 15%;
+    padding-left: 75%;
 }
 
 /*################### footer #####################*/
 footer{
-    padding: 40px;
+    padding: 10px;
 }
 
 .attribution { 
