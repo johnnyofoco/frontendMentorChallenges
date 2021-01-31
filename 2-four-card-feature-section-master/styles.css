@@ -6,6 +6,9 @@
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     background-color: hsl(0, 0%, 98%);
     margin: 0 auto;
     max-width: 200vh;    
@@ -20,6 +23,8 @@ header{
     text-align: center;
     padding: 50px;
     margin-bottom: -30px;
+    border: 1px solid black;
+    margin-top: 10px;
 }
 
 header #h1slogan{
@@ -37,7 +42,8 @@ header p{
 }
 /*################### main #####################*/
 main{
-    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid red;
 }
 
 main h3 {
@@ -52,43 +58,52 @@ main p{
 
 /*### div-cards-container ###*/
 .div-cards-container{
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: 25px 5px;
     grid-template-areas: ". tc ."
                          ". tc ."
                          "sc tc cc"
                          "sc kc cc"
                          "sc kc cc"
-                         ".  kc .";
+                         ". kc .";
+    width: 80%;
     margin: 0 auto;
-    justify-content: center;
+    border: 1px solid blue;
+    justify-items: center;
+    gap: 0 20px;
+    
 }
   
 .cards{
-    width: 50vh;
-    height: 30vh;
+    min-width: 350px;
+    min-height: 250px;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 2px 3px 0px hsl(229, 6%, 66%);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #card-supervisor{
     border-top: 4px solid hsl(180, 62%, 55%);
     grid-area: sc;
-    margin-left: 10%;   
+    justify-self: end;
+    
 }
 
 #card-teambuilder{
     border-top: 4px solid hsl(0, 78%, 62%);
     grid-area: tc;
+    align-self: flex-end;
 }
 
 #card-calculator{
     border-top: 4px solid hsl(212, 86%, 64%);
-    grid-area: cc;    
+    grid-area: cc; 
+    justify-self: flex-start;   
 }
 
 #card-karma{
@@ -97,11 +112,7 @@ main p{
 }
 
 img{
-    width: 8vh;
-    height: 8vh;
-    position: relative;
-    left: 35vh;
-    top: 1vh;
+
 }
 
 /*################### footer #####################*/
