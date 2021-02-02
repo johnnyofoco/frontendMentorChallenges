@@ -1,0 +1,92 @@
+/*##################  global ######################*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+/*##################  header  ######################*/
+
+header .logo{
+    max-width: 250px;
+    max-height: 250px;
+    padding: 25px;
+    margin: 30px 70px;
+}
+
+/*##################  main  ######################*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 100px;
+}
+
+.main-image-container{
+    max-width: 60%;
+}
+
+.main-text-container{
+    max-width: 50%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.main-text-container h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding: 25px; 
+}
+
+.main-text-container p{
+    max-width: 83%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 25px;     
+}
+
+button{
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+/*##################  footer ######################*/
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+.fab fa-facebook{
+    background-color: white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+
+ .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
