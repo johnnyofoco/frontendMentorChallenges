@@ -6,8 +6,9 @@
 }
 
 body{
-   background-color: #000000;
+   background-color: #2a0653;
    color: white;
+   
 }
 
 .container{
@@ -28,7 +29,7 @@ header{
     border-radius: 25px;
     width: 70%;
     margin: 10px auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1{
@@ -79,8 +80,8 @@ main{
 }
 
 .div-main{
-    background-color: rgb(6, 4, 151);
-    opacity: 0.69;
+    background-color: black;
+    opacity: 0.75;
     width: 400px;
     border-radius: 25px;
     margin: 0 auto;
@@ -91,11 +92,12 @@ main{
 
 main div h1{
     text-align: center;
-    color: #ffe600;
+    color: yellowgreen;
     font-size: 40px;
 }
 
 /*############## Main div-images ################*/
+
 main .div-images{
     background-color: yellowgreen;
     color: #eedf56;
@@ -106,8 +108,51 @@ main .div-images{
     margin: -20px auto;
 }
 
+
+.div-images .completed{
+    float: right;
+    font-size: 6px;
+    border: 5px ridge green;  
+    background-color: green;  
+    max-width: 200px;
+    padding: 30px;
+}
+
+.div-images .working{
+    float: right;
+    font-size: 6px;
+    border: 5px ridge red;  
+    background-color: red;  
+    max-width: 200px;
+    padding: 30px;
+}
+
+.div-images .not-started{
+    float: right;
+    font-size: 6px;
+    border: 5px ridge yellow;  
+    background-color: yellow;  
+    max-width: 200px;
+    padding: 30px;
+}
+
+.challenge-card .completed p{
+    font-weight: bold;
+    color: white;
+}
+
+.challenge-card .working p{
+    font-weight: bold;
+    color: white;
+}
+
+.challenge-card .not-started p {
+    font-weight: bold;
+    color: black;
+}
+
+
 main img{
-    float: ;
     max-width: 80%;
     max-height: 80%;
     border-radius: 15px;
@@ -115,7 +160,9 @@ main img{
 }
 
 .div-images #img-ch-3{
-    border: 5px solid red;
+    border: 5px red;
+    border-style: ridge;
+    
 }
 
 .div-images #working{
@@ -130,7 +177,7 @@ main img{
 
 .div-images h3{
     text-align: center;
-    color: coral;
+    color:#0f083b;
     font-size: 30px;
 }
 
