@@ -51,14 +51,16 @@ header .logo{
 
 .main-text-container p{
     max-width: 83%;
+    max-height: 80%;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     padding: 25px;     
 }
 
 button{
+    margin-left: 5%;
     background-color: white;
     color: hsl(257, 40%, 49%);
     padding: 15px;
@@ -75,11 +77,9 @@ button:hover{
 footer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 10vh;
-}
-
-.fab fa-facebook{
-    background-color: white;
+    margin-left: 25%;
 }
 
 .attribution { 
@@ -89,4 +89,117 @@ footer{
 
  .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.icons-footer{
+    float: left;
+    margin-left: 25%;
+    margin-top: -35px;
+    color: white;
+}
+
+.icons-footer .icons{
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 5px;
+}
+/*############# mobile screen #############*/
+
+@media only screen and (max-width: 375px){
+
+    body{
+        background-image: url("images/bg-mobile.svg");
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        margin-left: -20%;
+        margin-top: -10%;
+    }
+
+    header .logo{
+        max-width: 38%;
+        margin-top: 10%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: -4%;
+        padding: 5%;
+    }
+
+    .main-image-container{
+        margin: 0 auto;
+        max-width: 305px;
+        margin-bottom: 10%;
+    }
+
+    .main-image-container > img{
+        max-width: 305px;
+    }
+
+    .main-text-container{
+        display: flex;
+        flex-direction: column;
+        min-width: 335px;
+        margin: 0;
+    }
+
+    .main-text-container h1{
+        padding: 0;
+        font-size: 18px;
+        text-align: center;        
+    }
+
+    .main-text-container p{
+        margin-top: 2%;
+        margin-left: 0 auto;
+        padding: 0;
+        font-size: 12px;
+        align-self: center;
+        text-align: center;
+    }
+
+    button{
+        margin: 6% auto;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+        padding: 15px;
+        width: 200px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        color: white;
+        text-decoration: tomato;
+    }
+
+    footer .credits{
+        margin-top: 20%;
+    }
+
+    .icons-footer{
+        margin: 0;
+        margin-top: -20%;
+        margin-left: 33.3333%;
+    
+    }
+    .icons-footer .icons{
+        max-width: 8%;
+        border: none;
+    }
+
+
+
+
+
 }

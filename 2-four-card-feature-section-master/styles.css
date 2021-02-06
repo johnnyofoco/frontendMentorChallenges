@@ -123,3 +123,37 @@ footer{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/*############# mobile screen #############*/
+@media only screen and (max-width: 930px){
+
+    /*### div-cards-container ###*/
+    .div-cards-container{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+@media only screen and (max-width: 375px){
+
+    header{
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .cards{
+        
+    }
+
+    /*### div-cards-container ###*/
+    .div-cards-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    }
+}
