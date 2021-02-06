@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!--fav-icon-->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!--Font import-->
+
+  <link rel="stylesheet" href="styles.css">
+  <!--link for styles.css file-->
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!--title-->
 </head>
+
 <body>
+  <main class="container">
 
-  We're coming soon
+    <div class="div-text">
+      
+      <img class="logo" src="images/logo.svg" alt="image from logo">
+      <h1 id="first-h1">We're</h1>
+      <h1 id="second-h1">coming</h1>
+      <h1 id="third-h1">soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <form class="form" action="#">
+        <div>
+          <input type="email" placeholder="Email Address">
+          <input type="submit" value="">
+          <input type="image" src="images/icon-arrow.svg" alt="button">
+        </div>
+      </form>
 
-  Email Address
-  
+    </div>
+    <!--div-text-->
+
+
+    <div class="div-image">
+      <img src="images/hero-desktop.jpg" alt="hero-desktop">
+    </div>
+    <!--div-image-->
+  </main>
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/johnnyofoco">Johnny o Foco</a>.
     </p>
   </footer>
+
 </body>
+
 </html>
