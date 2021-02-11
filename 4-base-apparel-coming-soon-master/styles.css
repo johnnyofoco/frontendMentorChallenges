@@ -151,6 +151,10 @@ footer{
     margin-top: -5%;
 }
 
+.mobile-footer{
+    display: none;
+}
+
 .attribution { 
     font-size: 16px; 
     text-align: center; 
@@ -173,16 +177,17 @@ footer{
     body{
         background-color: hsla(0, 39%, 94%, 0.973);
         background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-
+        display: flex;
+        flex-flow: column wrap;
     }
     
     .container{
-        
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "l"
-                             "i"
-                             "t";
+        grid-template-areas: "l l"
+                             "i i"
+                             "t t"
+                             "f f";
         padding: 0;
         margin: 0;
         max-width: 375px;
@@ -229,15 +234,21 @@ footer{
     .div-text form{
         min-width: 100%;
         margin-top: 10%;
-        margin-bottom: 10%;
-
     }
 
-    footer {
-        
+    footer{
+        display: none;
+    }
+    .mobile-footer {
+        display: flex;
         grid-area: f;
         margin: 0;
-        padding: 0;
+        padding: 5%;
         background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    .mobile-footer p{
+        margin: 0;
+        padding: 0;
     }
 }
